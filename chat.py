@@ -43,7 +43,7 @@ name = StringVar()
 name.set('User') #Default USERNAME
 text.set('Hello there!') #Default TEXT
 tk.title('Offline Chat') #Title of window
-tk.geometry('500x600+10+10') #Window size
+tk.geometry('500x605+10+10') #Window size
 tk.resizable(False,False) #Make window unresizable
 tk.overrideredirect(True) #Make window looks nice
 tk.tkraise()
@@ -64,7 +64,7 @@ scrollbar = Scrollbar(frame2, orient = VERTICAL, bg='black', width='13', jump='1
 log = Text(frame2, height=29, bg='black', fg='white', yscrollcommand = scrollbar.set) #LOG
 titel = Label(frame1, text="Log Cat and All That Things", height=1, bg='black', fg='white') #TITEL
 nick = Entry(frame3, textvariable=name, borderwidth=2, bg='black', fg='white') #NICKNAME
-ibut = Button(frame3, text="v. 0.0.4 alpha", bg='black', fg='white') #INFORMATION BUTTON
+ibut = Button(frame3, text="v. 0.0.5 alpha", bg='black', fg='white') #INFORMATION BUTTON
 msg = Entry(frame3, textvariable=text, borderwidth=2, bg='black', fg='white') #MESSAGE
 but = Button(frame3, text='Send', bg='yellow') #ENTER BUTTON
 xbut = Button(frame1, text='╳', bg='black', fg='white', font='times 9') #CLOSE BUTTON
@@ -96,6 +96,8 @@ xbut.configure(command=destroy)
 sbut.configure(command=hide)
 ibut.configure(command=info)
 scrollbar.config(command = log.yview)
+nick.config(insertbackground='white')
+msg.config(insertbackground='white')
 log.insert(END, '-'*51 + '\n  ____ _________ ____    ____ ____ ____ ____ ____\n /  _ Y  __/  _ Y  _ \  /  _ Y  __Y  _ Y  __Y ___\\\n | | \|  \ | / \| | \|  | | \|  \/| / \|  \/|    \\\n | |_/|  /_| |-|| |_/|  | |_/|    / \_/|  __|___ |\n \____|____\_/ \|____/  \____|_/\_\____|_/  \____/\n\n' + '-'*51 + '\n                 _   _______   _\n                ( ) /       \ ( )\n                 \\\\/  _   _  \//\n                  \| (_) (_) |/\n                   |    _    |\n                   /\ _/_\_ /\\\n                  // |     | \\\\\n                 (_) |[] []| (_)\n                     |_____|\n\n' + '-'*51 + '\n\n')
 log.insert(END, 'SUSTEM: SHOWED 50 LAST MASSAGES\n' + '-'*51 + '\n')
 
