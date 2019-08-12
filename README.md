@@ -1,4 +1,4 @@
-# DDchat v 0.0.4 alpha
+# DDchat v 0.0.5 alpha
 Offline chat for DeadDrops (DeadDrops.com)
 
 ---------------------------------------------------
