@@ -14,3 +14,18 @@ How to use:
     - launch DDchat.py ` python DDchat.py ` or `python3 DDchat.py`
   
   If program throws an error at startup. Make sure DDchat and chat.txt locate at the same directory.
+
+
+# Languages
+
+![DDchat logo_RU](https://i.imgur.com/wZwbfNc.png)
+
+If you need **Russian** version just download files from directory `B33lzebub/DDchat/lang/RU`
+
+Everything else is the same.
+
+
+
+
+# Screenshots
+![Screenshot](https://i.imgur.com/1K7Vs0C.png) 
