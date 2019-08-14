@@ -145,7 +145,7 @@ def win1():
 
     # - - - - Opening and reading TAIL of DB - - - -
     #
-    with open('msgs.txt') as f:
+    with open('chat.txt') as f:
         data = f.readlines()
         tail = data[-50:]
 
@@ -158,7 +158,7 @@ def win1():
 
     #- - - - - - - - - OTHER - - - - - - - - -
     #
-    f = open('msgs.txt','a')
+    f = open('chat.txt','a')
     msg.bind('<Return>', sendproc) #Enter button -> send
     #tk.after(10000, loopproc) - SPAMMER
     tk.mainloop() #loop
